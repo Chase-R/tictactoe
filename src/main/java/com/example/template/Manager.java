@@ -24,6 +24,16 @@ public class Manager {
 
             }
 
+
+
+        }
+        if(tiles[0][0].getTileColor().equals(tiles[1][1].getTileColor()) &&tiles[1][1].getTileColor().equals(tiles[2][2].getTileColor()) && !tiles[1][1].getTileColor().equals("-fx-background-color: #ffff7c")){
+            return 1;
+
+        }
+        if(tiles[0][2].getTileColor().equals(tiles[1][1].getTileColor()) &&tiles[1][1].getTileColor().equals(tiles[2][0].getTileColor()) && !tiles[1][1].getTileColor().equals("-fx-background-color: #ffff7c")){
+            return 1;
+
         }
         return 2;
 
